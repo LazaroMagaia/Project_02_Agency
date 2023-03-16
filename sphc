@@ -1,0 +1,593 @@
+@include("Client.template.header")
+
+@include("Client.template.navbar")
+
+<!-- 1: Header -->
+<div class="home-header">
+    @if ($data["page"] == "sphc")
+        <div class="home-banner sphc">
+            @endif
+            <div class="container-fluid">
+                <h1 class="h-h-1 home-banner-title">
+                    O software que se <span>adapta</span> às necessidades e dimensão da sua empresa
+                </h1>
+                <p class="h-p-1 home-banner-paragraph">
+                    Somos parceiros phc, As empresas têm desafios comuns de gestão, mas também
+                </p>
+                <a class="btn btn-16 btn-primary btn-white-md">
+                    Pedir demonstração
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="p-header-text-img  p-header-text-img-hidden mt-5 home-banner-images">
+                    <img src="{{asset("img/logos/image21.png")}}" class="img-icon-normal me-5" alt="">
+                    <img src="{{asset("img/logos/image25.png")}}" class="img-icon-normal " alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 2: soluções phc -->
+        <div class="sphc-mb-sol">
+
+            <div class="sphc-solucoes ">
+                <div class="sphc-solucoes-item sphc-solucoes-item-1 ">
+                    <!-- 1. phc img -->
+                    <div class="text-end">
+                        <img src="./../img/logos/PHC_CS_logo_rodape 1.svg" class="sphc-logo-header" alt="">
+                    </div>
+                    <!-- 2. phc pc -->
+                    <div class="">
+                        <img src="./../img/Solution--Software_PHCCS.png" class="sphc-img-pc" alt="">
+                    </div>
+                </div>
+                <div class="sphc-solucoes-item sphc-solucoes-item-2" id="solucoes">
+                    <!-- 1. phc texto -->
+                    <div class="row mx-2 ">
+                        <div class="col">
+                            <h2 class="sphc-h2 mb-4 mt-5">Software PHC CS</h2>
+                            <p class="sphc-p mb-4 txt-j">
+                                As empresas têm desafios comuns de gestão, mas também necessidades distintas, de acordo com
+                                a sua dimensão e especificidades do negócio. Por isso, temos um conjunto de soluções de
+                                gestão abrangentes e adaptáveis, quer para as áreas críticas das empresas, quer para os
+                                setores de atividade em que se inserem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. soluções transversais -->
+                    <div class="row bg-sector-trans mb-4 mx-2 p-4">
+                        <div class="col-12">
+                            <h3 class="sphc-h3 mb-4">Soluções Transversais</h3>
+                        </div>
+
+                        <!-- Icons: left side -->
+                        <div class="col-md-6 ">
+                            <div class="d-flex flex-column">
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--6.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/gestao" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Gestão e ERP</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--2.svg" class="icon-sol-img" alt="">
+                                    </div>
+
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/financeira" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Financeira</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--3.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/industria" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Indústria</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--4.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/equipes" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Equipas</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Icons right side -->
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--5.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/crm" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">CRM</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--6.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/frotas" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Frota</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-primary"></div>
+                                        <img src="./../img/icones/icon-trans--7.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/suporte-tecnico" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Suporte Técnico</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 3. soluções sectoriais -->
+                    <div class="row bg-sector-trans mx-2 p-4">
+                        <div class="col-12 mb-4">
+                            <h3 class="sphc-h3">Soluções Sectoriais</h3>
+                        </div>
+
+                        <!-- Icons: left side -->
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--1.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/civil" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Construção Civil</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--2.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/clinica" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Clinicas</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--3.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/industria" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Indústria</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Icons right side -->
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--4.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/logistica" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Logistica e distribuição</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--5.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/restauracao" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Restauração</a></p>
+                                </div>
+                                <div class="d-inline-flex">
+                                    <!-- icon -->
+                                    <div class="icon-sol ">
+                                        <div class="icon-sol-colour u-bg-green-1"></div>
+                                        <img src="./../img/icones/icon-sector--6.svg" class="icon-sol-img" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <p class="sphc-p"><a href="/retalho" class="text-decoration-none sphc-p"
+                                                         style="color:#212529;">Retalho</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3: Gama phc -->
+        <div class="container-fluid sphc-mb-gPhc" id="gamas">
+            <!-- Headings -->
+            <div class="text-center mb-5">
+                <h2 class="sphc-v2-h2 mb-2">Gamas PHC CS</h2>
+                <p class="sphc-v2-p ">As empresas têm desafios comuns de gestão</p>
+            </div>
+            <!-- End Headings -->
+
+            <!-- Cards -->
+            <div class="grid text-start">
+                <div class="grid-item grid-item--1 card-radius-dark-tin ps-5 pe-2">
+
+                    <!-- icon e.g. phc -->
+                    <img src="./../img/logos/phc-corp.png" class="img-card--icon p-3 my-2" alt="">
+                    <!-- title -->
+                    <h2 class="heading-1-card pb-0 u-text-corporate">PHC Corporate</h2>
+
+                    <!-- subtitle -->
+                    <h2 class="heading-3-2 my-0 mb-4 ">Para pequenas empresas</h2>
+                    <!-- description -->
+                    <p class="index-card-parag mb-2">
+                        deal para empresas de pequena dimensão, de qualquer setor de atividade, com pouca
+                        necessidade de customização do software.
+                    </p>
+                    <div class="mb-5 ms-5">
+                        <li class="heading-card-link-none mt-3"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2" alt="">
+                            Empresas de pequenas dimensões
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Qualquer setor de atividade
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Software customizável à exata medida
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Possibilidade de ter 5 utilizadores a trabalhar no software em simultâneo.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="grid-item grid-item--2 card-radius-red-tin ps-5 pe-2">
+                    <!-- icon e.g. phc -->
+                    <img src="./../img/logos/phc-adv.png" class="img-card--icon p-3 my-2" alt="">
+                    <!-- title -->
+                    <h2 class="heading-1-card pb-0 u-text-red">PHC Advanced</h2>
+
+                    <!-- subtitle -->
+                    <h2 class="heading-3-2 my-0 mb-4 ">Para Médias Empresas</h2>
+                    <!-- description -->
+                    <p class="index-card-parag mb-2">
+                        Ideal para empresas de média dimensão, de qualquer setor de
+                        atividade, cujas especificidades de negócio já exigem uma maior capacidade de
+                        customização do software.
+                    </p>
+                    <div class="mb-5 ms-5">
+                        <li class="heading-card-link-none mt-3"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2" alt="">
+                            Empresas de media dimensão
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Qualquer setor de atividade
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Software customizável à exata medida
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Possibilidade de ter até 50 colaboradores
+                        </li>
+                    </div>
+                </div>
+
+                <div class="grid-item grid-item--3 card-radius-golden-tin ps-5 pe-2">
+                    <!-- icon e.g. phc -->
+                    <img src="./../img/logos/phc-ent.png" class="img-card--icon p-3 my-2" alt="">
+                    <!-- title -->
+                    <h2 class="heading-1-card pb-0 u-text-golden">PHC Enterprise</h2>
+
+                    <!-- subtitle -->
+                    <h2 class="heading-3-2 my-0 mb-4 ">Para Grandes Empresas</h2>
+                    <!-- description -->
+                    <p class="index-card-parag mb-2">
+                        Oferece a possibilidade de programação e desenvolvimento de novas funcionalidades
+                        e de tabelas de utilizador, e capacidade de automação de processos com agendamentos.
+                        Sendo ideal:
+                    </p>
+                    <div class="mb-5 ms-5">
+                        <li class="heading-card-link-none mt-3"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2" alt="">
+                            Empresas de grandes demensões
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Qualquer setor de atividade
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Software customizável à exata medida
+                        </li>
+                        <li class="heading-card-link-none mt-1"><img src="./../img/icones/checked.svg"
+                                                                     class="u-rounded img-icon--small u-bg-green p-2 m-0" alt="">
+                            Possibilidade de ter mais 50 colaboradores
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <!-- End Cars -->
+
+            <div class="text-center m-p-cont-btn">
+                <a  target="_blank" href="https://wa.me/258840407515" class="btn btn-primary btn-demo" style="font-size:1.6rem">
+                    Solicitar demonstração  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 4: Serviços -->
+        <div class="container-fluid m-p-cont-servicos">
+            <div class="servicos">
+                <div class="text-center">
+                    <h3 class="index-erp-h4 mb-3">Serviços ERC</h3>
+                    <h3 class="index-erp-h2 mb-5 pb-5">
+                        Um dos softwares mais confiados pelas organizações
+                    </h3>
+                </div>
+
+                <div class="grid text-center u-text-primary"">
+                <div class=" ">
+                    <img src=" ./../img/iluustration--pais.svg" class="img-card--icon-big p-4 mb-2" alt="iluustration--pais.svg">
+                    <h2 class="index-erp-h3 my-5">+4</h2>
+                    <h3 class="index-erp-p">Países</h3>
+                </div>
+
+                <div class=" ">
+                    <img src="./../img/iluustration--empresas.svg" class="img-card--icon-big p-4 mb-2"
+                         alt="iluustration--empresas.svg">
+                    <h2 class="index-erp-h3 my-5">+34mil</h2>
+                    <h3 class="index-erp-p">Empresas</h3>
+                </div>
+
+                <div class="">
+                    <img src="./../img/iluustration--users.svg" class="img-card--icon-big p-4 mb-2"
+                         alt="iluustration--users.svg">
+                    <h2 class="index-erp-h3 my-5">+159mil</h2>
+                    <h3 class="index-erp-p">Utilizadores</h3>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- 5: Casos de sucesso -->
+<div class=" sphc-mb-cSucesso">
+    <div class="sucesso">
+
+        <div class="text-center">
+            <h2 class="sphc-cSucesso-h2 ">Casos de sucesso</h2>
+            <p class="sphc-cSucesso-h3 m-auto-md p-2 pb-5">
+                Modernize o seu negócio e aumente a rentabilidade da sua empresa com uma solução de gestão avançada
+            </p>
+        </div>
+
+        <div class="grid text-center my-5">
+            <!-- <div class="grid-item grid-item--1 card-radius-green ">
+
+                 <img src="./../img/logos/logo--uem.jpg" class="img-card--icon p-3 my-4" alt="">
+
+                 <h2 class="heading-1-card pb-4">Universidade Edurado Mondlane</h2>
+
+                 <p class="sphc-cSucesso-p mb-5 pb-5">
+                     Através da implementação do PHC Advanced com os módulos de Gestão Lotes e Documentos Eletrónicos
+                     a
+                     Winsig...
+                 </p>
+             </div>
+
+             <div class="grid-item grid-item--2 card-radius-primary">
+
+                 <img src="./../img/logos/logo--malacha.jpg" class="img-card--icon p-3 my-4" alt="">
+
+                 <h2 class="heading-1-card pb-4">Malacha Construções</h2>
+
+                 <p class="sphc-cSucesso-p mb-5 pb-5">
+                     Através da implementação do PHC Advanced com os módulos de Gestão Lotes e Documentos Eletrónicos
+                     a
+                     Winsig...
+                 </p>
+             </div>
+             -->
+            <div class="grid-item grid-item--3 card-radius-red">
+                <!-- icon e.g. uem -->
+                <img src="./../img/logos/logo--malacha.jpg" class="img-card--icon p-3 my-4" alt="">
+                <!-- title -->
+                <h2 class="heading-1-card pb-4">Malacha Construções </h2>
+                <!-- description -->
+                <p class="heading-card-paragraph mb-5 pb-5">
+                    Para a Malacha Contruções era importante equiparar o seu crescimento de
+                    negócio com uma forte inovação tecnológica.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <a href="/casos-de-sucesso.html" class="btn btn-primary btn-demo mt-5 mb-1" style="font-size: 1.6rem">
+                ver mais <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 6: Usuários phc -->
+<div class="container-fluid mb-func-users">
+    <div class="financeira-users">
+        <!-- Headings -->
+        <div class="text-center">
+            <h2 class="func-h3">Quem Usa o PHC CS?</h2>
+            <p class="func-p">Mais de 34.000 empresas confiam na PHC Software</p>
+        </div>
+        <!-- Headings end -->
+
+
+        <div class="financeira-users-flex">
+            <div class="financeira-users-flex-item financeira-users-flex-item--1">
+                <img src="./../img/logos/phc-users-1.svg" class="financeira-users-flex-icon" alt="">
+
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--2">
+                <img src="./../img/logos/phc-users-2.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--3">
+                <img src="./../img/logos/phc-users-3.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--4">
+                <img src="./../img/logos/phc-users-4.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--5">
+                <img src="./../img/logos/phc-users-5.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--6">
+                <img src="./../img/logos/phc-users-6.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--7">
+                <img src="./../img/logos/phc-users-7.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--8">
+                <img src="./../img/logos/phc-users-8.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--9">
+                <img src="./../img/logos/phc-users-9.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--10">
+                <img src="./../img/logos/phc-users-10.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--11">
+                <img src="./../img/logos/phc-users-11.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-flex-item--12">
+                <img src="./../img/logos/phc-users-12.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+            <div class="financeira-users-flex-item financeira-users-grid-item--13">
+                <img src="./../img/logos/phc-users-13.svg" class="financeira-users-flex-icon" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testemunho -->
+<div class="container-fluid m-p-cont-testemunho">
+    <div class="testemunho">
+
+        <div class=" text-center mb-5">
+            <h3 class="p1-about-us text-primary text-center mb-0">Soluções de Segurança</h3>
+            <h3 class="h3-about-us mb-0">
+                Testemunhos</h3>
+            <p class="heading-3 text-center">Conheça um pouco sobre os nossos serviços
+            </p>
+        </div>
+
+        <div class="grid-col-t text-white mb-malacha">
+            <div class="item-1 position-relative card-radius-testemunho">
+                <div class=" p-5">
+                    <h4 class="heading-1-card">Dírcio Martins</h4>
+                    <p class="t-p">Departamento de Contabilidade </p>
+                    <p class="heading-card-paragraph txt-j"> “O software PHC reduziu o tempo de execução de tarefas,
+                        flexibilizou os
+                        processos contabilísticos e reduziu
+                        a carga de trabalho.o software PHC reduziu o tempo de execução de tarefas, flexibilizou os
+                        processos
+                        contabilísticos e reduziu a carga de trabalho.”
+                    </p>
+                </div>
+
+                <!-- malacha -->
+                <!-- Fazer o detalhe esquisito da malacha -->
+
+                <div class="malacha malacha-none">
+                    <div class="malacha-bg ">
+                        <!-- white -->
+                    </div>
+                    <img src="./../img/icones/logo--malacha.svg" alt="" class="malacha-icon">
+                </div>
+            </div>
+
+
+            <div class="item-1 position-relative card-radius-testemunho">
+                <div class=" p-5">
+                    <h4 class="heading-1-card">Sr. Félix</h4>
+                    <p class="t-p">Departamento de IT da Malacha Construções.
+                    </p>
+                    <p class="heading-card-paragraph txt-j"> “O software PHC reduziu o tempo de execução de “A solução
+                        mais eficiente encontrada no mercado”.
+                    </p>
+                </div>
+
+                <!-- malacha -->
+                <!-- Fazer o detalhe esquisito da malacha -->
+
+                <div class="malacha">
+                    <div class="malacha-bg">
+                        <!-- white -->
+                    </div>
+                    <img src="./../img/icones/logo--malacha.svg" alt="" class="malacha-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mais informacoes -->
+<div class="container m-p-cont-mais-info">
+    <div class="grid-info">
+        <div class="item-info item-info--1 u-ms-md">
+            <h2 class="g-h2 ps-0 p-3">Solicite uma demonstração gratuita e veje o PHC CS em acção</h2>
+            <p class="g-p">Para escolher o software adequado para a sua empresa faça a si mesmo 4
+                questões?</p>
+            <a  href="/contacto.html" class="btn btn-outline-light heading-card-paragraph" style="font-size:1.8rem" type="button">
+                Fale connosco <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="item-info item-info--2">
+        </div>
+        <div class="item-info item-info--3"></div>
+        <div class="item-info item-info--4"></div>
+        <div class="item-info item-info--5"></div>
+        <div class="item-info item-info--6"></div>
+        <div class="item-info item-info--7"></div>
+        <div class="item-info item-info--8"></div>
+        <div class="item-info item-info--9"
+             style="background-image: url("../img/home-call-to-action.jpg");
+            background-size: cover;"></div>
+    </div>
+</div>
+
+@include("Client.template.footer")
